@@ -218,11 +218,6 @@ $has_cookie_reminders = isset($_COOKIE['reminders']) && !empty(json_decode($_COO
                 </div>
             <?php endif; ?>
         </div>
-
-        <footer>
-            <p>Session ID: <code><?php echo session_id(); ?></code></p>
-            <p>Cookie Status: <?php echo isset($_COOKIE['reminders']) ? '🍪 Active' : '❌ No cookies'; ?></p>
-        </footer>
     </div>
 
     <script>
