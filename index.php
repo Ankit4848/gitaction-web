@@ -211,7 +211,7 @@ $has_cookie_reminders = isset($_COOKIE['reminders']) && !empty(json_decode($_COO
                             <?php endif; ?>
                             
                             <div class="reminder-meta">
-                                <small>Created: <?php echo date('M d, Y h:i A', strtotime($reminder['created_at'])); ?></small>
+                                <small>Created on: <?php echo date('M d, Y h:i A', strtotime($reminder['created_at'])); ?></small>
                             </div>
                         </div>
                     <?php endforeach; ?>
