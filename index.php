@@ -105,14 +105,14 @@ $has_cookie_reminders = isset($_COOKIE['reminders']) && !empty(json_decode($_COO
             <div class="alert alert-error"><?php echo $error_message; ?></div>
         <?php endif; ?>
 
-        <!-- <div class="info-box">
+        <div class="info-box">
             <h3>ℹ️ How it works:</h3>
             <ul>
                 <li><strong>Session Storage:</strong> Reminders are stored in PHP sessions (temporary, cleared when browser closes)</li>
                 <li><strong>Cookie Storage:</strong> Check "Save to Cookie" to persist reminders for 30 days</li>
                 <li><strong>Load from Cookie:</strong> Restore previously saved reminders from cookies</li>
             </ul>
-        </div> -->
+        </div>
 
         <?php if ($has_cookie_reminders && empty($reminders)): ?>
             <div class="cookie-notice">
